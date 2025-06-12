@@ -7,8 +7,7 @@ pipeline {
     stages {
         stage('Clonar') {
             steps {
-                git credentialsId: 'JenkinsToken',
-                    url: 'https://github.com/nicolasgravertt/devops-SaludoApp.git',
+                git url: 'https://github.com/nicolasgravertt/devops-SaludoApp.git',
                     branch: 'main'
             }
         }
